@@ -5,21 +5,24 @@ body{
 
 #main{
 	display: flex;
-	margin: auto;
-	width: 80%;
+	width: 100%;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
 /*Partie gauche du CV */
 #conteneurgauche{
     background-color: #FFCE33;
-	width: 17.5%;
+	width: 20%;
+	margin-left: 
 }
 
 /*Photo*/
 .photo{
-	margin-top: 3rem;
-	margin-bottom: 3rem;
-	margin-left: 2rem; 
+	display: flex;
+	margin: auto; 
+	margin-top: 2.5rem;
+	margin-bottom: 2.5rem;
 	border-radius: 50%;
     width: 200px;
 }
@@ -40,15 +43,12 @@ body{
     justify-content: center;
     align-items: center;
 	background-color: 464646;
-	margin-top: 2rem;
 	height:40px;
 	color: #FFCE33; 
 }
 
 #conteneurloisir{
-    display: flex;
-    justify-content: space-around;
-    background-color: red;
+    margin-bottom: 1rem;
 }
 
 
@@ -66,7 +66,7 @@ body{
 /*Partie droite du CV*/
 #conteneurdroite{
     background-color: white;
-	width: 48%;
+    width: 80%;
 }
 
 /*Titre*/
@@ -75,7 +75,8 @@ h1{
 	margin-left: 3rem;
 	font-size: 50px
 }
-.soustitre{
+h3{
+	font-weight: normal;
 	font-size: 19px;
 
 }
@@ -96,48 +97,33 @@ h1{
 #header-h2-span{
     border-bottom: 2px #FFCE33 solid;
 }
-
-/*Formation*/
-.formations{
-    height:40px;
+.titrecatégorie{
+    padding-bottom: 10px;
 	margin-left: 3rem;
 	margin-right: 3rem;
 	border-bottom: 2px #FFCE33 solid;
 }
-#conteneur1{
-   flex-direction: row;
-   display: flex;
-}
-
 
 #conteurtext{
 	display: flex;
 	flex-direction: column;
 }
 
-#conteneurdate{
+.conteneurdate{
 	display: flex;
-	flex-direction: column;
-	width: 850px;
+	flex-direction: row;
 }
 
 .date{
+	flex-grow: 3;
+	margin-right: 6em;
     margin-top: 0.7rem;	
 	margin-left: 3rem;
     height: 150px;
     font-size: 14px;  
 }
-.text{
-	font-size: 14px;
-    margin-right: 3em; 
-}
 
 /*Experiences professionnelle*/
-.experiences{
-	height:40px;
-	margin-left: 3rem;
-	margin-right: 3rem;
-	border-bottom: 2px #FFCE33 solid;
 }
 #conteneur2{
 	display: flex;
@@ -149,20 +135,6 @@ h1{
 	font-size: 14px;
 	margin-left: 3.5em;
 }	
-.partie4{
-	height:33px;
-	width: 50%;
-	font-size: 14px;
-	margin-left: 3em;
-}
-
-/*Recommandations*/
-.recommandations{
-    height:40px;
-	margin-left: 3rem;
-	margin-right: 3rem;
-	border-bottom: 2px #FFCE33 solid;
-}
 /*Conteneur 3 contient aussi la partie 3 et 4 */
 #conteneur3{
 	display: flex;
@@ -183,13 +155,18 @@ h1{
    font-size: 1.3em;
 }
 .iconeloisir{
+   display: flex;
+   justify-content: space-around;
    font-size: 2.6em;
    color: 464646;
 }
-p{
+aside p {
 	font-size: 14px;
 	margin-left: 3em;
     margin-right: 3em;
+}
+p{
+	margin-right: 1em;
 }
 li{
    list-style-type: none;
@@ -198,32 +175,34 @@ li{
 /*Responsive*/
 @media  (max-width: 800px){
 	#conteneurdroite{
-	width: 80%;
+	width: 100%;
 	}
 	#main{
 	display: flex;
+	flex-direction: column;
 	margin: auto;
 	width: 100%;
     }
     .photo{
+    margin-top: 1rem;
+	margin-bottom: 0rem;	
     width: 100px;
-    margin-left: 1.5rem;
-    margin-top: 1.5rem; 
-    margin-bottom: 0.5rem;
     }
     .loisir{
     margin-top: 2rem;
     }	
-   .moi{
-	height:60px;
-    }
     .t1{
     margin-top: 0.5em !important;
+    font-size: 35px;
+    margin-left: 0em;
     }
     .t2{
     margin-bottom: 3rem !important;
+    margin-left: 0em;
+    font-size: 20px;
     }
     p{
+    font-size:13px; 
     margin-left: 0.7rem!important; 
     margin-right: 0.7rem!important;
     }
@@ -232,6 +211,39 @@ li{
     margin-right: -2em;
     }
     #conteneurgauche{
-	width: 20%;
+	width: 100%;
     }
+    .titrecatégorie{
+    font-size: 15px;
+	margin-left: 1rem;
+	margin-right: 1rem;
+    }
+    .date{
+	margin: auto; 
+    margin-left: 1rem;
+    height: 10px;
+    font-size: 12px;	
+    }
+    .text{
+	font-size: 12px;
+    margin-right: 1em; 
+    }
+    .conteneurdate{
+    	display: block;
+    	padding: 1rem;
+    }
+    #conteneurdroite *{
+    	text-align: center;
+    }
+    #conteneur3{
+    	display: block;
+    	margin-left: 0em;
+    }
+    .partie3{
+    	margin:auto;
+    }
+    .soustitre{
+    	font-size: 15px;
+    	margin-top: 1.5em;
+    }	
 }
