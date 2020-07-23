@@ -175,7 +175,7 @@ aside p {
     margin-right: 3em;
 }
 
-@media  (max-width: 800px){
+@media (max-width: 800px){
 	#conteneurdroite{
 	width: 100%;
 	}
@@ -248,7 +248,7 @@ aside p {
     font-size: 20px;
     margin-top: 1.5rem;
     height:13px;
-    color:464646; 
+    color:#464646; 
     }
     .partie3{
     	margin:auto;
@@ -260,7 +260,7 @@ aside p {
     margin-top: 1rem;
     margin-bottom: 2rem;
     height:13px;
-    color:464646;
+    color:#464646;
     }
     .loisir{
     display: none;
