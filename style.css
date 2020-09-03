@@ -1,0 +1,324 @@
+body{
+    background-color: black;
+    font-family:arial;
+}
+
+main{
+
+	display: flex;
+	max-width: 1200px;
+	margin:auto;
+}
+
+.t1bis{ 
+    display:none; 
+}
+.t2bis{
+	display: none;
+
+}
+#conteneurgauche{
+    background-color: #FFCE33;
+	width: 25%;
+
+}
+
+.photo{
+	display: flex;
+	margin: auto; 
+	margin-top: 2.5rem;
+	margin-bottom: 4rem;
+	border-radius: 50%;
+    width: 200px;
+}
+
+.contact{
+	display: flex;
+	text-align: center;
+    justify-content: center;
+    align-items: center;
+	background-color: #464646;
+	height:40px;
+	color: #FFCE33; 
+}
+.br{
+	margin-left: 3rem;
+}
+.brbis{
+	margin-left: 3rem;
+}
+
+.moi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	background-color: #464646;
+	height:40px;
+	color: #FFCE33; 
+}
+
+.loisir{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	background-color: #464646;
+	margin-top: 600px;
+	height:40px;
+	color:#FFCE33; 
+}
+.loisirbis{
+	display: none;
+}
+.iconeloisirbis{
+	display: none;
+}
+
+
+#conteneurdroite{
+    background-color: white;
+    width: 75%;
+}
+
+h1{
+	font-weight: normal;
+	margin-left: 3rem;
+	font-size: 50px
+}
+h3{
+	font-weight: normal;
+	font-size: 19px;
+
+}
+#prenom{
+	color:#FFCE33;
+}
+.t1{
+   font-size: 50px;
+   margin-left: 1em;
+   margin-top: 2em;
+   height:13px;
+}
+.t2{
+   font-weight: normal;
+   margin-left: 2em;
+   margin-bottom: 8rem;
+}
+#header-h2-span{
+    border-bottom: 2px #FFCE33 solid;
+}
+.titrecatégorie{
+    padding-bottom: 10px;
+	margin-left: 3rem;
+	margin-right: 3rem;
+	border-bottom: 2px #FFCE33 solid;
+}
+
+#conteurtext{
+	display: flex;
+	flex-direction: column;
+}
+
+.conteneurdate{
+	display: flex;
+	flex-direction: row;
+}
+
+.date{
+	flex-grow: 3;
+	margin-right: 6em;
+    margin-top: 1rem;	
+	margin-left: 3rem;
+    height: 150px;
+    width: 500px;
+    font-size: 14px;  
+}
+.date2{
+	flex-grow: 3;
+	margin-right: 6em;
+    margin-top: 1rem;	
+	margin-left: 3rem;
+    height: 150px;
+    width: 400px;
+    font-size: 14px;  
+}
+
+#conteneur2{
+	display: flex;
+    flex-shrink: 1;
+	margin-left: 1em;
+}
+.partie3{
+	width: 50%;
+	font-size: 14px;
+	margin-left: 3.5em;
+}	
+#conteneur3{
+	display: flex;
+	margin-bottom: 2rem;
+}
+
+.icone{
+   color: #FFCE33; 
+}
+.icones{
+   color: #FFCE33; 
+    font-size: 1em;
+}
+.iconemain{
+   color: #FFCE33;
+   font-size: 1.3em;
+}
+.iconeloisir{
+   display: flex;
+   justify-content: space-around;
+   font-size: 2.6em;
+   color: #464646;
+}
+.marge{
+	margin-left:1.5rem;
+	margin-right: 1.5rem;
+	font-size: 14px;
+}
+p{
+	margin-right: 3rem;
+    font-size: 14px;
+}
+.iconeloisir .fas{
+	width: 60px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: solid 2px;
+	border-radius: 100%;
+}
+.iconeloisirbis .fas{
+	width: 60px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: solid 2px;
+	border-radius: 100%;
+}
+
+@media (max-width: 800px){
+	#conteneurdroite{
+	width: 100%;
+	}
+	main{
+	flex-direction: column;
+	width:100%;
+    }
+    .photo{
+    margin-top: 1rem;
+	margin-bottom: 0rem;	
+    width: 100px;
+    }
+    .loisir{
+    margin-top: 2rem;
+    }	
+    .t1{
+    display: none;
+    }
+    .t2{
+    display: none;
+    }
+    p{
+    font-size:13px; 
+    margin-left: 0.7rem!important; 
+    margin-right: 0.7rem!important;
+    }
+    li{
+    margin-left: -1.9em;
+    margin-right: -2em;
+    }
+    #conteneurgauche{
+	width: 100%;
+    }
+    .titrecatégorie{
+    font-size: 15px;
+	margin-left: 1rem;
+	margin-right: 1rem;
+    }
+    .date{
+	margin: auto; 
+    margin-left: -1.5rem;
+    height: 10px;
+    width: auto;
+    font-size: 12px;	
+    }
+    .date2{
+	margin: auto; 
+    margin-left: -1.5rem;
+    height: 10px;
+    width: auto;
+    font-size: 12px;	
+    }
+    .text{
+	font-size: 12px;
+    margin-right: 1em; 
+    }
+    .conteneurdate{
+    display: block;
+    padding: 1rem;
+    }
+    #conteneurdroite *{
+    text-align: center;
+    }
+    #conteneur3{
+    display: block;
+    margin-left: 0em;
+    }
+    .soustitre{
+    font-size: 15px;
+    margin-top: 1.5em;
+    }	
+    .t1bis{
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 1.5rem;
+    height:13px;
+    color:#464646; 
+    }
+    .partie3{
+    margin:auto;
+    }
+    .t2bis{
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    height:13px;
+    color:#464646;
+    }
+    .loisir{
+    display: none;
+    margin-top:auto;
+    }
+    .iconeloisir{
+    display: none;
+    }
+    .loisirbis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	background-color: #464646;
+	height:40px;
+	margin-top:0; 
+	color:#FFCE33;
+    }
+    .iconeloisirbis{
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.6em;
+    color: #464646; 
+    }
+    #conteneurdroitebis{  
+    height: 140px;
+    background-color:#FFCE33;
+    }
+
+}
