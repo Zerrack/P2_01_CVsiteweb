@@ -3,7 +3,7 @@ body{
     font-family:arial;
 }
 
-#main{
+main{
 
 	display: flex;
 	max-width: 1200px;
@@ -57,16 +57,12 @@ body{
 	color: #FFCE33; 
 }
 
-#conteneurloisir{
-    margin-bottom: 1rem;
-}
-
 .loisir{
 	display: flex;
     justify-content: center;
     align-items: center;
 	background-color: #464646;
-	margin-top: 41rem;
+	margin-top: 600px;
 	height:40px;
 	color:#FFCE33; 
 }
@@ -80,7 +76,7 @@ body{
 
 #conteneurdroite{
     background-color: white;
-    width: 80%;
+    width: 75%;
 }
 
 h1{
@@ -133,7 +129,16 @@ h3{
     margin-top: 1rem;	
 	margin-left: 3rem;
     height: 150px;
-    width: 450px;
+    width: 500px;
+    font-size: 14px;  
+}
+.date2{
+	flex-grow: 3;
+	margin-right: 6em;
+    margin-top: 1rem;	
+	margin-left: 3rem;
+    height: 150px;
+    width: 400px;
     font-size: 14px;  
 }
 
@@ -169,21 +174,41 @@ h3{
    font-size: 2.6em;
    color: #464646;
 }
-aside p {
+.marge{
+	margin-left:1.5rem;
+	margin-right: 1.5rem;
 	font-size: 14px;
-	margin-left: 3em;
-    margin-right: 3em;
+}
+p{
+	margin-right: 3rem;
+    font-size: 14px;
+}
+.iconeloisir .fas{
+	width: 60px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: solid 2px;
+	border-radius: 100%;
+}
+.iconeloisirbis .fas{
+	width: 60px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: solid 2px;
+	border-radius: 100%;
 }
 
 @media (max-width: 800px){
 	#conteneurdroite{
 	width: 100%;
 	}
-	#main{
-	display: flex;
+	main{
 	flex-direction: column;
-	margin: auto;
-	width: 100%;
+	width:100%;
     }
     .photo{
     margin-top: 1rem;
@@ -223,6 +248,13 @@ aside p {
     width: auto;
     font-size: 12px;	
     }
+    .date2{
+	margin: auto; 
+    margin-left: -1.5rem;
+    height: 10px;
+    width: auto;
+    font-size: 12px;	
+    }
     .text{
 	font-size: 12px;
     margin-right: 1em; 
@@ -251,7 +283,7 @@ aside p {
     color:#464646; 
     }
     .partie3{
-    	margin:auto;
+    margin:auto;
     }
     .t2bis{
     display: block;
@@ -264,6 +296,7 @@ aside p {
     }
     .loisir{
     display: none;
+    margin-top:auto;
     }
     .iconeloisir{
     display: none;
@@ -284,7 +317,7 @@ aside p {
     color: #464646; 
     }
     #conteneurdroitebis{  
-    height: 120px;
+    height: 140px;
     background-color:#FFCE33;
     }
 
